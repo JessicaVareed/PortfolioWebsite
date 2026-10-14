@@ -11,13 +11,12 @@
 	var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 	/* 01. THEME TOGGLE
-	   The head script applies a saved choice before paint; with no
-	   saved choice the CSS follows the system setting. */
+	   Dark by default. The head script applies a saved choice before
+	   paint, so a visitor who picked light keeps it. */
 	var toggle = document.querySelector('.theme-toggle');
-	var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 	function currentTheme() {
-		return root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+		return root.getAttribute('data-theme') || 'dark';
 	}
 
 	function labelToggle() {
@@ -31,7 +30,6 @@
 		try { localStorage.setItem('theme', next); } catch (e) {}
 		labelToggle();
 	});
-	systemDark.addEventListener('change', labelToggle);
 	labelToggle();
 
 	/* 02. HEADER — solid once the page has scrolled */

@@ -7,7 +7,6 @@
    ========================================================== */
 
 /* 01. TOKENS
-   Palette taken from assets/img/blog/hero-bg.webp:
    navy #0b1020, teal #2bb3cf, violet #7c5cff.
    ---------------------------------------------------------- */
 :root {
@@ -18,43 +17,7 @@
 	--teal: #2bb3cf;
 	--violet: #7c5cff;
 
-	/* light theme */
-	--bg: #f6f7fb;
-	--bg-alt: #eceff8;
-	--surface: #ffffff;
-	--text: #0f1630;
-	--muted: #5b6385;
-	--line: #dfe3f0;
-	--accent: #157a93;          /* teal darkened for 4.5:1 on white */
-	--chip-bg: rgba(21, 122, 147, 0.08);
-	--chip-text: #126a80;
-	--shadow: 0 1px 2px rgba(15, 22, 48, 0.04), 0 8px 24px rgba(15, 22, 48, 0.06);
-	--header-bg: rgba(246, 247, 251, 0.82);
-
-	--radius: 14px;
-	--radius-sm: 8px;
-	--header-h: 68px;
-	color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root:not([data-theme="light"]) {
-		--bg: #0b1020;
-		--bg-alt: #0e1429;
-		--surface: #131a33;
-		--text: #e7eaf6;
-		--muted: #9aa3c4;
-		--line: #222a48;
-		--accent: #2bb3cf;
-		--chip-bg: rgba(43, 179, 207, 0.1);
-		--chip-text: #84d8ea;
-		--shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
-		--header-bg: rgba(11, 16, 32, 0.78);
-		color-scheme: dark;
-	}
-}
-
-:root[data-theme="dark"] {
+	/* dark theme: the default for every visitor */
 	--bg: #0b1020;
 	--bg-alt: #0e1429;
 	--surface: #131a33;
@@ -66,7 +29,27 @@
 	--chip-text: #84d8ea;
 	--shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.25);
 	--header-bg: rgba(11, 16, 32, 0.78);
+
+	--radius: 14px;
+	--radius-sm: 8px;
+	--header-h: 68px;
 	color-scheme: dark;
+}
+
+/* light theme: only when chosen with the header toggle */
+:root[data-theme="light"] {
+	--bg: #f6f7fb;
+	--bg-alt: #eceff8;
+	--surface: #ffffff;
+	--text: #0f1630;
+	--muted: #5b6385;
+	--line: #dfe3f0;
+	--accent: #157a93;          /* teal darkened for 4.5:1 on white */
+	--chip-bg: rgba(21, 122, 147, 0.08);
+	--chip-text: #126a80;
+	--shadow: 0 1px 2px rgba(15, 22, 48, 0.04), 0 8px 24px rgba(15, 22, 48, 0.06);
+	--header-bg: rgba(246, 247, 251, 0.82);
+	color-scheme: light;
 }
 
 /* 02. BASE
@@ -398,10 +381,6 @@ button {
 .theme-toggle .icon-moon { display: none; }
 :root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
 :root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
-@media (prefers-color-scheme: light) {
-	:root:not([data-theme="dark"]) .theme-toggle .icon-sun { display: none; }
-	:root:not([data-theme="dark"]) .theme-toggle .icon-moon { display: block; }
-}
 
 .menu-toggle {
 	display: none;
@@ -428,7 +407,7 @@ button {
 	min-height: 100vh;
 	min-height: 100svh;
 	padding: calc(var(--header-h) + 48px) 0 96px;
-	background: var(--navy) url("../img/blog/hero-bg.webp") center / cover no-repeat;
+	background: var(--navy) url("../img/bg.webp") center / cover no-repeat;
 	color: #e7eaf6;
 	overflow: hidden;
 	isolation: isolate;
