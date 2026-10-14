@@ -1,0 +1,292 @@
+/* XX. PHONE
+=================================================*/
+
+@media only screen and (min-width:300px) and (max-width: 640px) {
+
+	/* TYPOGRAPHY */
+	h2 {
+		font-size: 35px;
+		line-height: 45px;
+		font-weight: 600;
+	}
+
+	/* NAVIGATION */
+	.navbar-toggle .icon-bar {
+		background: #f8f8f8;
+	}
+
+	.nav-bg .navbar-toggle .icon-bar {
+		background: #0f1630;
+	}
+
+	.navbar-toggle {
+		margin-right: 0px;
+		margin-top: -30px;
+	}
+
+	.navbar {
+		min-height: 0px;
+	}
+
+	.navigation-menu .navbar-nav li a {
+		padding: 11px 15px;
+		color: #0f1630;
+	}
+
+	.navigation-menu .navbar-nav .active {
+		color: #1f8aa6;
+	}
+
+	.navigation-menu .navbar-nav li a:hover {
+		color: #6a4bd1;
+	}
+
+	.nav-bg .navigation-menu .navbar-nav li a:hover {
+		color: #6a4bd1;
+	}
+
+	.nav-bg .navigation-menu .navbar-nav li a {
+		padding: 11px 15px;
+	}
+
+	.navbar-toggle {
+		margin-top: -30px;
+	}
+
+	.navbar-collapse {
+		background: #fff;
+	}
+
+	.nav-bg .navbar-collapse {
+		background: #fff;
+	}
+
+	/* HOME */
+	.home-text {
+		top: 45%;
+	}
+
+	.profile-pic img {
+		padding: 0;
+		margin: 0 auto;
+		margin-bottom: 16px;
+	}
+
+	.home-text h1 {
+		font-size: 2.2em;
+		font-weight: 500;
+		line-height: 60px;
+	}
+
+	.home-text h3 {
+		font-size: 1.6em;
+	}
+
+	.arrow {
+		font-size: 3em;
+		bottom: 90px;
+		margin: auto;
+		width: 40px;
+		height: 40px;
+	}
+
+	.lift {
+		bottom: 104px;
+	}
+
+	/* ABOUT */
+	#about {
+		padding: 40px 0 50px;
+	}
+
+	#about h2 {
+		margin-top: 30px;
+	}
+
+	.facts {
+		float: left;
+	}
+
+	.numscroller {
+		font-size: 25px;
+		font-weight: 600;
+	}
+
+	.count-name-intro {
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+	/* SKILLS */
+	#skills {
+		padding: 70px 0 30px;
+	}
+
+	/* PORTFOLIO */
+	#portfolio {
+		padding: 70px 0 60px;
+	}
+
+	.filter-btn {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.filter {
+		margin: 8px 5px;
+		font-weight: 600;
+	}
+
+	/* CONTACT */
+	#contact {
+		padding: 70px 0 70px;
+	}
+
+	/* FOOTER */
+	.social-icons-footer li a {
+		width: 45px;
+	}
+
+}
+
+/* XX. TABLET
+=================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+	/* NAVIGATION */
+	.logo {
+		padding-top: 25px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+	.navigation-menu .navbar-nav li a {
+		padding: 30px 11px;
+		font-size: 12px;
+	}
+
+	.nav-bg .navigation-menu .navbar-nav li a {
+		padding: 30px 11px;
+		font-size: 12px;
+	}
+
+	.nav-bg .logo {
+		padding-top: 28px;
+	}
+
+	/* ABOUT */
+	.description {
+		max-width: 100%;
+		
+	}
+
+	.facts {
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+
+	.count-item {
+		margin-bottom: 20px;
+	}
+
+}
+
+/* XX. LAPTOP 1024 SCREEN
+=================================================*/
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+
+	/* TYPOGRAPHY */
+	h2 {
+		font-size: 2.3em;
+	}
+
+	h4 {
+		font-weight: 600;
+		margin-bottom: 16px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	/* GENERAL */
+	.btn {
+		font-size: 14px;
+	}
+
+	/* NAVIGATION */
+	.logo a {
+		font-size: 0.8em;
+	}
+
+	.navigation-menu .navbar-nav li a {
+		font-size: 0.7em;
+	}
+
+	.nav-bg .logo {
+		padding-top: 18px;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+	.nav-bg .navigation-menu .navbar-nav li a {
+		color: #0f1630;
+		padding: 18px 11px;
+		-webkit-transition: .3s;
+		transition: .3s;
+		font-size: 0.7em;
+	}
+
+	/* HOME */
+	.home-text h1 {
+		font-size: 2.6em;
+		line-height: 50px;
+		margin-top: 20px;
+	}
+
+	.home-text h3 {
+		font-size: 1.3em;
+	}
+
+	.profile-pic img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.arrow {
+		font-size: 2em;
+		width: 40px;
+		height: 40px;
+		bottom: 30px;
+	}
+
+	.lift {
+		bottom: 44px;
+	}
+
+	/* ABOUT */
+	.facts {
+		float: right;
+		margin-top: 30px;
+	}
+
+	.numscroller {
+		font-size: 1.8em;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+	.count-name-intro {
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	/* PORTFOLIO */
+	.filter {
+		font-size: 0.9em;
+		font-weight: 600;
+	}
+
+}
